@@ -1,0 +1,967 @@
+chec.html 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+.inputBox{
+text-align: center;
+}
+.box {
+  background-image: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>CHECK</title>
+</head>
+<body>
+ <div class="box">
+        <div class="inputBox">
+        <form>
+            <br>
+            <h1>CHECKER</h1>
+            <h1>LETS UPDATE YOUR BODY CONDITION</h1>
+            <div class="inputBox">
+            <h1>TEMPERATURE</h1>
+            <input type="text" name="temp" placeholder="Enter your body Temperature" id="temp">
+            </div>
+            <br>
+         </form>
+         <form>
+         <div class="inputBox">
+        <h1>PULSE RATE</h1>
+            <input type="text" name="pulserate" placeholder="Enter your pulse rate" id="pulserate" >
+            </div>
+            <br>
+        </form>
+        <form>
+       <div class="inputBox">
+        <h1>HEART BEAT</h1>
+        <input type="text" name="HEART BEAT" placeholder="Enter your Heart beat" id="heartrate">
+        </div>
+        <br>
+       </form>
+       <form>
+        <div class="inputBox">
+        <h1>AGE</h1>
+        <input type="text" name="AGE" placeholder="Enter your AGE" id="age">
+        </div>
+        </form>
+        <br>
+        <button onClick="calculate()">Calculate</button>
+        </div>
+        </div>  
+        <script>
+        function calculate(){
+        var t1=document.getElementById("temp").value;
+            var pulse=document.getElementById("pulserate").value;
+            var heart=document.getElementById("heartrate").value;
+            var age=document.getElementById("age").value;
+            window.location.href=" ";
+            if(t1 >= 97 && t1<=101)
+            {
+            document.write("TEMPERATURE IS NORMAL");
+            document.write("<br />");
+            }
+            if(pulse >=60 && pulse<=100)
+            {
+            document.write("PULSE IS NORMAL\n");
+            document.write("<br />");
+            }
+            if(age<=1)
+            {
+            if(heart>=120 && heart<=160)
+                {
+            document.write("BABY'S HEART RATE IS NORMAL\n");
+                }else
+                {
+                document.write("BABY'S HEART RATE IS ABNORMAL\n");
+                }
+            }else if(age<=2)
+            {
+            if(heart>=90 && heart<=140)
+            {
+            document.write("BABY'S HEART RATE IS NORMAL\n");
+            }else
+            {
+            document.write("BABY'S HEART RATE IS ABRNOMAL\n");
+            }
+           
+            }else if(age<=6)
+            {
+            if(heart>=80 && heart<=110)
+            {
+            document.write("CHILD'S HEART RATE IS NORMAL\n");
+            }else
+            {
+            document.write("CHILD'S HEART RATE IS ABNORMAL\n");
+            }
+            }else if(age<=12)
+            {
+            if(heart>=75 && heart<=100)
+            {
+            document.write("CHILD'S HEART RATE IS NORMAL");
+            }else
+            {
+            document.write("CHILD'S HEART RATE IS ABNORMAL");
+            }
+            }else if(age<=19)
+            {
+            if(heart>=60 && heart<=90)
+            {
+            document.write("ADULT HEART RATE IS NORMAL");
+            }else
+            {
+            document.write("ADULT HEART RATE IS ABNORMAL");
+            }
+            }else
+            {
+            if(heart<=60 && heart<=100)
+            {
+            document.write("HEART RATE OF THE PERSON IS NORMAL");
+            }else
+            {
+            document.write("HEART RATE OF THE PERSON IS ABNORMAL");
+            }
+            }
+           
+        }
+        </script>
+</body>
+</html> 
+check.jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.in{
+text-align:center;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>CHECK</title>
+</head>
+<body>
+<div class="in">
+<h1>CHECKER</h1>
+<form action="mycheck.jsp" method="post">
+<h2>Enter Your Age</h2>
+<input type="text" name="age" required/>
+<h2>Enter Your Temperature</h2>
+<input type="text" name="temper" required/>
+<h2>Enter Your PulseRate</h2>
+<input type="text" name="pulse" required/>
+<h2>Enter Your HeartBeat </h2>
+<input type="text" name="heart" required/>
+<br><br>
+<input type="submit" value="checker"/><br> <br>
+</form>
+</div>
+</body>
+</html> 
+doctor.html 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+.in{
+text-align: center;
+color: black;
+}
+</style>
+<title>DOCTOR DETAILS</title>
+</head>
+<body>
+<br>
+<br>
+<div class="in">
+<h1>ABOUT THE DOCTOR</h1>
+<br>
+<H1>NAME:DR NAVEEN MBBS</H1>
+<br>
+<H1>Email:drnaveen@gmail.com</H1>
+<br>
+<H1>Phone Number:8768086800</h1>
+<br>
+<h1>Hospital Details:Apollo hospital,chennai</h1>
+<br>
+<h2>For extra support visit your nearby hospital</h2>
+</div>
+</body>
+</html> 
+login.jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" type='text/css' href="style.css"/>
+</head>
+<body>
+<div class="box">
+  <h2>Login</h2>
+  <form action="validate.jsp" method="post">
+    <div class="inputBox">
+      <input type="text" name="lgnuser" required/>
+      <label>USERNAME</label>
+    </div>
+    <div class="inputBox">
+      <input type="password" name="lgnpass" required/>
+        <label>PASSWORD</label>
+    </div>
+    <input type="submit" value="Sign in"><br> <br>
+    <input type="reset" value="clear"/>
+  </form>
+</div>
+</body>
+</html>
+mycheck.jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>mychecker</title>
+</head>
+<body>
+<%
+   String age=request.getParameter("age");
+   session.setAttribute("sessage", age);
+   String temp=request.getParameter("temper");
+   session.setAttribute("sesstemp", temp);
+   String pulse=request.getParameter("pulse");
+   session.setAttribute("sesspulse", pulse);
+   String heart=request.getParameter("heart");
+   session.setAttribute("sessheart", heart);
+  try{
+ Class.forName("com.mysql.jdbc.Driver");
+ Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata3","root","Aswin@123");
+ Statement st=con.createStatement();
+      int i=st.executeUpdate("insert into checker(temp,pulse,heart,age)values('"+temp+"','"+pulse+"','"+heart+"','"+age+"')");
+      Statement st1=con.createStatement();
+      String myname=(String)session.getAttribute("sessname");
+      String myemail=(String)session.getAttribute("sessemail");
+      String myphone=(String)session.getAttribute("sessnumb");
+      String myage=(String)session.getAttribute("sessage");
+      String mytemp=(String)session.getAttribute("sesstemp");
+      String myheart=(String)session.getAttribute("sessheart");
+      String mypulse=(String)session.getAttribute("sesspulse");
+      int j=st1.executeUpdate("insert into alldetails(name,email,phonenum,age,temp,heart,pulse)values('"+myname+"','"+myemail+"','"+myphone+"','"+myage+"','"+mytemp+"','"+myheart+"','"+mypulse+"')");
+      out.println("Data is successfully inserted!");
+ response.sendRedirect("save.html");
+  }
+  catch(Exception e)
+  {
+ out.print("Database error");
+  }
+%>
+</body>
+</html>
+personal.jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://www.euro.who.int/__data/assets/image/0004/436558/coronavirus-COVID-19-WHO-Europe_500x300.png);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.in{
+text-align:center;
+}
+</style>
+<title>PERSONAL DETAILS</title>
+</head>
+<body>
+<div class="in">
+<form action="personaldetails.jsp" method="post">
+<h2>Enter Your Name</h2>
+<input type="text" name="name" required/>
+<h2>Enter Your Email</h2>
+<input type="text" name="email" required/>
+<h2>Enter Your Number</h2>
+<input type="text" name="phonenum" required/>
+<br><br>
+<input type="submit" value="Register"/><br> <br>
+</form>  
+</div>
+</body>
+</html>
+personaldetails,jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<%@page import="java.sql.*"%>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PERSONAL DETAILS STORE</title>
+</head>
+<body>
+<%
+   String username=request.getParameter("name");
+   session.setAttribute("sessname",username);
+   String email=request.getParameter("email");
+   session.setAttribute("sessemail",email);
+   String phoneno=request.getParameter("phonenum");
+   session.setAttribute("sessnumb",phoneno);
+  try{
+ Class.forName("com.mysql.jdbc.Driver");
+ Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata3","root","Aswin@123");
+ Statement st=con.createStatement();
+      int i=st.executeUpdate("insert into personal(username,email,phoneno)values('"+username+"','"+email+"','"+phoneno+"')");
+ out.println("Data is successfully inserted!");
+ if(i>=1)
+ {
+out.print("registered");
+%>
+<jsp:forward page="symptom.jsp"/>
+<%
+  }
+  }
+  catch(Exception e)
+  {
+ out.print("Database error");
+  }
+%>
+</body>
+</html> 
+phonenumber.js
+window.onload = function() {
+    render();
+};
+
+function render() {
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+    recaptchaVerifier.render();
+}
+
+function phoneAuth() {
+    var number = document.getElementById("number").value;
+    firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function(confirmationResult) {
+        window.confirmationResult = confirmationResult;
+        coderesult = confirmationResult;;
+        console.log(coderesult);
+        alert("message sent");
+    }).catch(function(error) {
+        alert(error.message);
+    });
+}
+
+function codeverify() {
+    var code = document.getElementById('verificationCode').value;
+    coderesult.confirm(code).then(function(result) {
+        alert("succesfully ");
+        window.location.href="reg.jsp";
+        var user = result.user;
+        console.log(user);
+    }).catch(function(error) {
+        alert(error.message);
+    });
+}
+reg.jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://www.euro.who.int/__data/assets/image/0004/436558/coronavirus-COVID-19-WHO-Europe_500x300.png);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.in{
+text-align:center;
+}
+</style>
+<title>user registeration</title>
+</head>
+<body>
+<div class="in">
+<h1>SIGN UP</h1>
+<form action="storedetails.jsp" method="post">
+<h2>Enter Your Username</h2>
+<input type="text" name="txtuser" required/>
+<h2>Enter Your EmailId</h2>
+<input type="text" name="email" required/>
+<h2>Enter Your Password</h2>
+<input type="password" name="txtpass" required/>
+<h2>Mobile Number</h2>
+<input type="text" name="number" id="number" required/>
+<br><br>
+<input type="submit" value="Register"/><br> <br>
+</form>
+</div>
+</body>
+
+</html>
+save,html 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>save</title>
+</head>
+<body>
+<h1>SUCCESSFULLY UPDATED</h1>
+</body>
+</html>
+storedetails.jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>store details</title>
+</head>
+<body>
+<%
+   String un=request.getParameter("txtuser");
+   String pw=request.getParameter("txtpass");
+   String phoneno=request.getParameter("number");
+   String mailid=request.getParameter("email");
+  try{
+ Class.forName("com.mysql.jdbc.Driver");
+ Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata3","root","Aswin@123");
+ Statement st=con.createStatement();
+      int i=st.executeUpdate("insert into users1(un,pw,phoneno,mailid)values('"+un+"','"+pw+"','"+phoneno+"','"+mailid+"')");
+ out.println("Data is successfully inserted!");
+ if(i>=1)
+ {
+out.print("registered");
+%>
+<jsp:forward page="login.jsp"/>
+<%
+  }
+  }
+  catch(Exception e)
+  {
+ out.print("Database error");
+  }
+%>
+</body>
+</html> 
+style.css 
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://static1.squarespace.com/static/5e6613a1dc75b87df82b78e1/t/5e6b98beede584624b3f3c97/1584109761526/SoMe-image.jpg?format=1500w);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.625rem;
+}
+
+.box h2 {
+  margin: 0 0 1.875rem;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.062rem;
+  margin-bottom: 1.875rem;
+  border: none;
+  border-bottom: 0.065rem solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox input:not([value=""]) ~ label {
+  top: -1.125rem;
+  left: 0;
+  color: #03a9f4;
+  font-size: 0.75rem;
+}
+
+.box input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #03a9f4;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1rem;
+}
+
+.box input[type="submit"]:hover {
+  background-color: #1cb1f5;
+}
+symp.html 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+.in{
+text-align: center;
+}
+.whole {
+  background-image: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<title>SYMPTOMS CHECK</title>
+</head>
+<body>
+            <div class="whole">
+            <div class="in">
+            <h1>SYMPTOMS CHECK</h1>
+            <h2>LETS HAVE A SYMPTOMS CHECK</h2>
+            <h1>DO YOU HAVE FEVER?</h1>
+            <input type="radio" id="feveryes" name="fevercheck" value="yes">
+            <label for="feveryes">YES</label>
+            <input type="radio" id="feverno" name="fevercheck" value="no">
+            <label for="feverno">NO</label>
+            </div>
+             <div class="in">
+            <h1>DO YOU HAVE COUGH/COLD?</h1>
+            <input type="radio" id="coldyes" name="coldcheck" value="yes">
+            <label for="coldyes">YES</label>
+            <input type="radio" id="coldno" name="coldcheck" value="no">
+            <label for="coldno">NO</label>
+            </div>
+            <div class="in">
+            <h1>DO YOU FEEL TIREDNESS?</h1>
+            <input type="radio" id="tiredyes" name="tiredcheck" value="yes">
+            <label for="tiredyes">YES</label>
+            <input type="radio" id="tiredno" name="tiredcheck" value="no">
+            <label for="tiredno">NO</label>
+            </div>
+            <div class="in">
+            <h1>DO YOU HAVE BREATHING PROBLEM?</h1>
+            <input type="radio" id="breathyes" name="breathcheck" value="yes">
+            <label for="breathyes">YES</label>
+            <input type="radio" id="breathno" name="breathcheck" value="no">
+            <label for="feverno">NO</label>
+            </div>
+            <div class="in">
+            <h1>DO YOU HAVE HEADACHE?</h1>
+            <input type="radio" id="headyes" name="headcheck" value="yes">
+            <label for="headyes">YES</label>
+            <input type="radio" id="headno" name="headcheck" value="no">
+            <label for="feverno">NO</label>
+            <br>
+            <br>
+            <input type="submit" value="Submit" onClick="cal()"/>
+            <br>
+            <br>
+            </div>
+            </div>
+            <script>
+            function cal(){
+            var tot=0;
+            //var tot = document.getElementById("answer");
+                //ansD.value = val1 + val2;
+            var t=document.querySelector('input[name="fevercheck"]:checked').value;
+                if(t=="yes")
+                {
+                tot=tot+20;
+                }
+                var t1=document.querySelector('input[name="coldcheck"]:checked').value;
+                if(t1=="yes")
+                {
+                tot=tot+20;
+                }
+                var t2=document.querySelector('input[name="tiredcheck"]:checked').value;
+                if(t2=="yes")
+                {
+                tot=tot+20;
+                }
+                var t3=document.querySelector('input[name="breathcheck"]:checked').value;
+                if(t3=="yes")
+                {
+                tot=tot+20;
+                }
+                var t4=document.querySelector('input[name="headcheck"]:checked').value;
+                if(t4=="yes")
+                {
+                tot=tot+20;
+                }
+                //document.write(tot);
+                if(tot >= 60)
+                {
+                alert("YOUR PROBABILIIY IS LIGHT HIGH LETS CHECK FURTHER");
+                window.location.href="chec.html";
+                }else
+                {
+                alert("HAPPY TO SAY THAT YOU ARE OUT OF SYMPTOMS!!! LETS PROCEED FURTHER");
+                window.location.href="chec.html";
+                }
+            }
+            </script>
+            <script>
+           
+            </script>
+</body>
+</html> 
+symptom.jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+.in{
+text-align: center;
+}
+.whole {
+  background-image: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<title>Symptom check</title>
+</head>
+<body>
+ <div class="whole">
+            <div class="in">
+            <h1>SYMPTOMS CHECK</h1>
+            <h2>LETS HAVE A SYMPTOMS CHECK</h2>
+            <h1>DO YOU HAVE FEVER?</h1>
+            <input type="radio" id="feveryes" name="fevercheck" value="yes">
+            <label for="feveryes">YES</label>
+            <input type="radio" id="feverno" name="fevercheck" value="no">
+            <label for="feverno">NO</label>
+            </div>
+             <div class="in">
+            <h1>DO YOU HAVE COUGH/COLD?</h1>
+            <input type="radio" id="coldyes" name="coldcheck" value="yes">
+            <label for="coldyes">YES</label>
+            <input type="radio" id="coldno" name="coldcheck" value="no">
+            <label for="coldno">NO</label>
+            </div>
+            <div class="in">
+            <h1>DO YOU FEEL TIREDNESS?</h1>
+            <input type="radio" id="tiredyes" name="tiredcheck" value="yes">
+            <label for="tiredyes">YES</label>
+            <input type="radio" id="tiredno" name="tiredcheck" value="no">
+            <label for="tiredno">NO</label>
+            </div>
+            <div class="in">
+            <h1>DO YOU HAVE BREATHING PROBLEM?</h1>
+            <input type="radio" id="breathyes" name="breathcheck" value="yes">
+            <label for="breathyes">YES</label>
+            <input type="radio" id="breathno" name="breathcheck" value="no">
+            <label for="feverno">NO</label>
+            </div>
+            <div class="in">
+            <h1>DO YOU HAVE HEADACHE?</h1>
+            <input type="radio" id="headyes" name="headcheck" value="yes">
+            <label for="headyes">YES</label>
+            <input type="radio" id="headno" name="headcheck" value="no">
+            <label for="feverno">NO</label>
+            <br>
+            <br>
+            <input type="submit" value="Submit" onClick="cal()"/>
+            <br>
+            <br>
+            </div>
+            </div>
+            <script>
+            function cal(){
+            var tot=0;
+            //var tot = document.getElementById("answer");
+                //ansD.value = val1 + val2;
+            var t=document.querySelector('input[name="fevercheck"]:checked').value;
+                if(t=="yes")
+                {
+                tot=tot+20;
+                }
+                var t1=document.querySelector('input[name="coldcheck"]:checked').value;
+                if(t1=="yes")
+                {
+                tot=tot+20;
+                }
+                var t2=document.querySelector('input[name="tiredcheck"]:checked').value;
+                if(t2=="yes")
+                {
+                tot=tot+20;
+                }
+                var t3=document.querySelector('input[name="breathcheck"]:checked').value;
+                if(t3=="yes")
+                {
+                tot=tot+20;
+                }
+                var t4=document.querySelector('input[name="headcheck"]:checked').value;
+                if(t4=="yes")
+                {
+                tot=tot+20;
+                }
+                //document.write(tot);
+                if(tot >= 60)
+                {
+                alert("BE STRONG YOU WILL CURED SOON!! LETS PROCEED FURTHER");
+                window.location.href="check.jsp";
+                }else
+                {
+                alert("HAPPY THAT YOU ARE RECOVERING!! LETS PROCEED FURTHER");
+                window.location.href="check.jsp";
+                }
+            }
+            </script>
+            <script>
+           
+            </script>
+</body>
+</html> 
+validate.jsp 
++<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>VALIDATE</title>
+</head>
+<body>
+<%
+response.setContentType("text/html");
+String un=request.getParameter("lgnuser");
+String pw=request.getParameter("lgnpass");
+try{
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata3","root","Aswin@123");
+     Statement st=con.createStatement();
+     String sql="select * from users1";
+     ResultSet rs=st.executeQuery(sql);
+     boolean flag=false;
+     while(rs.next())
+     {
+    if(un.equals(rs.getString(2)) && pw.equals(rs.getString(3)))
+    {
+    Statement st1=con.createStatement();
+       int j=st1.executeUpdate("insert into mylogin(username,password)values('"+un+"','"+pw+"')");
+    flag=true;
+    }
+      }
+      if(flag)
+      {
+     %>
+  <jsp:forward page="symptom.jsp"/>
+  <%
+      }else
+      {
+     out.print("invalid user /password");
+     out.print("<a href='login.jsp'>go back</a>");
+     
+      }
+}catch(Exception e)
+{
+out.print("database error");
+}
+
+
+%>
+
+</body>
+</html> 
+verify.html 
+<html>
+<head>
+<title>covid 19 patient tracker</title>
+<script src="phonenumber.js"></script>
+<link rel="stylesheet" type='text/css' href="style.css"/>
+</head>
+<body>  
+    <div class="box">
+        <h2>SIGN IN</h2>
+        <div class="inputBox">
+        <form>
+            <div class="inputBox">
+            <h2>NAME</h2>
+            <input type="text" name="name" id="name">
+            </div>
+        </form>
+        <h2>MOBILE NUMBER</h2>
+            <input type="text" name="number" id="number" >
+            </div>
+            <button type= "button" onclick="phoneAuth();">sendCode</button>
+        <form>
+            <div class="inputBox">
+            <h2>VERIFICATION CODE</h2>
+            <input type="text" name="verify" id="verificationCode" >
+            </div>
+            <button type="button" onclick="codeverify();">Verify code</button>
+            <input type="reset">
+        </form>
+        <div id="recaptcha-container"></div>
+        </div>
+         
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCWJMtf-fl65uV3ehuTk2z8-2SGHPAfKE4",
+    authDomain: "w-d1245.firebaseapp.com",
+    databaseURL: "https://w-d1245.firebaseio.com",
+    projectId: "w-d1245",
+    storageBucket: "w-d1245.appspot.com",
+    messagingSenderId: "1046356478415",
+    appId: "1:1046356478415:web:c70022e6d13b6c2a3eaaba",
+    measurementId: "G-J6898VZ5D9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html> 
+welcome.html 
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type='text/css' href="style.css"/>
+<style>
+h1 {
+text-align: center;
+color: white;
+}
+h2 {
+text-align: center;
+color: white;
+}
+h4 {
+text-align: center;
+color: yellow;
+}
+.imgalign {
+  text-align: center;
+ display: block;
+}
+.sub{
+  text-align: center;
+}
+.sub {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-40%, -10%);
+}
+.topnav {
+  background-color: #33A2FF;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+</style>
+<title>WELCOME</title>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="login.jsp">Login</a>
+  <a href="verify.html">Register</a>
+  <a href="symp.html">Checker</a>
+  <a href="doctor.html">Doctor</a>
+  </div>
+<h1> COVID 19 PATIENT MONITORING</h1>
+<h2> LETS BE SAFE TOGETHER</h2>
+<span class="imgalign">
+<img src="https://www.texanscan.org/wp-content/uploads/2020/02/Coronavirus-Precautions-1.jpg" alt="empty" style="width:1000px;height:420px;">
+</span>
+<h4> THESE ARE SOME PRECAUTIONS</h4>
+
+</body>
+</html>
